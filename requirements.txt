@@ -2,3 +2,6 @@ django
 numpy
 pygad
 pandas
+djangorestframework
+pytest
+pytest-django

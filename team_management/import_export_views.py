@@ -6,8 +6,11 @@ from django.db import transaction
 from django.http import HttpResponse
 import csv
 
+from django.contrib.auth import get_user_model
 from services.csv_service import validate_csv_file, resolve_user_identity
 from team_management.models import TeamSet, Team, TeamAssignment, CourseEnrollment
+
+User = get_user_model()
 
 
 class CSVImportAPIView(APIView):

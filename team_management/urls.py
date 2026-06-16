@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from team_management.views.import_export_views import CSVImportAPIView, CSVExportAPIView
+from team_management.import_export_views import CSVImportAPIView, CSVExportAPIView
 
 urlpatterns = [
     path("team-sets/", views.TeamSetListCreateView.as_view(), name="teamset-list-create"),
